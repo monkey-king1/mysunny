@@ -1,0 +1,26 @@
+[0.037s] Invoking command in '/home/yj/camera_tis/build/camera_tis': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+[0.096s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.145s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.269s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.352s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.353s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.579s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.681s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.684s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.720s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.994s] -- Found rclcpp_components: 9.2.2 (/opt/ros/galactic/share/rclcpp_components/cmake)
+[1.094s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[1.358s] -- Checking for modules 'gstreamer-1.0;gstreamer-video-1.0;gobject-introspection-1.0;libmodbus'
+[1.379s] --   No package 'gobject-introspection-1.0' found
+[1.385s] CMake Error at /usr/share/cmake-3.16/Modules/FindPkgConfig.cmake:463 (message):
+[1.386s]   A required package was not found
+[1.386s] Call Stack (most recent call first):
+[1.386s]   /usr/share/cmake-3.16/Modules/FindPkgConfig.cmake:643 (_pkg_check_modules_internal)
+[1.386s]   CMakeLists.txt:26 (pkg_check_modules)
+[1.386s] 
+[1.386s] 
+[1.390s] -- Configuring incomplete, errors occurred!
+[1.390s] See also "/home/yj/camera_tis/build/camera_tis/CMakeFiles/CMakeOutput.log".
+[1.390s] See also "/home/yj/camera_tis/build/camera_tis/CMakeFiles/CMakeError.log".
+[1.404s] make: *** [Makefile:370: cmake_check_build_system] Error 1
+[1.407s] Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16

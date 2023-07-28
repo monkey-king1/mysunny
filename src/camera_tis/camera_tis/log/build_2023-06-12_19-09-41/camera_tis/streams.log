@@ -1,0 +1,41 @@
+[0.038s] Invoking command in '/home/yj/camera_tis/build/camera_tis': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/yj/camera_tis -DCMAKE_INSTALL_PREFIX=/home/yj/camera_tis/install/camera_tis
+[0.069s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.134s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.135s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.293s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.393s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.404s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.603s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.663s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.826s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.962s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.966s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.005s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.014s] -- Looking for pthread.h
+[1.241s] -- Looking for pthread.h - found
+[1.243s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.427s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.427s] -- Looking for pthread_create in pthreads
+[1.577s] -- Looking for pthread_create in pthreads - not found
+[1.578s] -- Looking for pthread_create in pthread
+[1.742s] -- Looking for pthread_create in pthread - found
+[1.744s] -- Found Threads: TRUE  
+[2.064s] -- Found rclcpp_components: 9.2.2 (/opt/ros/galactic/share/rclcpp_components/cmake)
+[2.186s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[2.429s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[2.432s] -- Checking for modules 'gstreamer-1.0;gstreamer-video-1.0;gobject-introspection-1.0;tcam;libmodbus'
+[2.440s] --   No package 'gstreamer-1.0' found
+[2.448s] --   No package 'gstreamer-video-1.0' found
+[2.453s] --   No package 'gobject-introspection-1.0' found
+[2.460s] --   No package 'tcam' found
+[2.469s] CMake Error at /usr/share/cmake-3.16/Modules/FindPkgConfig.cmake:463 (message):
+[2.469s]   A required package was not found
+[2.469s] Call Stack (most recent call first):
+[2.469s]   /usr/share/cmake-3.16/Modules/FindPkgConfig.cmake:643 (_pkg_check_modules_internal)
+[2.469s]   CMakeLists.txt:24 (pkg_check_modules)
+[2.469s] 
+[2.470s] 
+[2.473s] -- Configuring incomplete, errors occurred!
+[2.473s] See also "/home/yj/camera_tis/build/camera_tis/CMakeFiles/CMakeOutput.log".
+[2.473s] See also "/home/yj/camera_tis/build/camera_tis/CMakeFiles/CMakeError.log".
+[2.489s] Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/yj/camera_tis -DCMAKE_INSTALL_PREFIX=/home/yj/camera_tis/install/camera_tis

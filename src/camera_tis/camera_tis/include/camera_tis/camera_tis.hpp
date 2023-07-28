@@ -25,26 +25,7 @@
 #define SHOW_OUTPUT_FPS
 
 struct _GstElement;
-#define LOCALFUNC
-#define HI_RET int
-#define IN
-#define OUT
-#define U32 unsigned int
-#define U8 unsigned char
-#define CHAR char
-#define UCHAR unsigned char
-#define uint32_t unsigned int
-#define uint16_t unsigned short
-#define uint8_t unsigned char
 
-#define HI_SUCCESS 0
-#define HI_FAILURE (-1)
-
-
-struct sensor_regs {
-	uint16_t reg;
-	uint32_t data;
-};
 namespace camera_tis
 {
 
@@ -156,9 +137,6 @@ private:
   int _set_view_width(int width);
 
   int _set_view_height(int height);
-
-  void send_regs(int fd,  const struct sensor_regs *regs, int num_regs);
-
 
   E2proomData camdata;
 

@@ -1,0 +1,2 @@
+Invoking command in '/home/yj/camera_tis/build/camera_tis': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16

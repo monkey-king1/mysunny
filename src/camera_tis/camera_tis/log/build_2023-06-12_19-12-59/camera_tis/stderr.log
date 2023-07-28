@@ -1,0 +1,24 @@
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:26:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+   26 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/camera_tis.dir/build.make:63: CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/yj/camera_tis/src/E2camData.cpp:1[m[K:
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:[m[K In member function ‘[01m[Kvoid E2proomData::read_para()[m[K’:
+[01m[K/home/yj/camera_tis/include/fileout/E2camData.h:13:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   13 | #define E2POOM_CAMER_SYSPATH_MOTO   [01;35m[K"./SAVE/E2P_CAMER_DLG.bsd"[m[K
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:66:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KE2POOM_CAMER_SYSPATH_MOTO[m[K’
+   66 |     if(0 > fo.ReadFile([01;36m[KE2POOM_CAMER_SYSPATH_MOTO[m[K,buff,E2POOM_CAMER_SAVEBUFF))
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:[m[K In member function ‘[01m[Kvoid E2proomData::write_camer_para()[m[K’:
+[01m[K/home/yj/camera_tis/include/fileout/E2camData.h:13:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   13 | #define E2POOM_CAMER_SYSPATH_MOTO   [01;35m[K"./SAVE/E2P_CAMER_DLG.bsd"[m[K
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:125:18:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KE2POOM_CAMER_SYSPATH_MOTO[m[K’
+  125 |     fo.WriteFile([01;36m[KE2POOM_CAMER_SYSPATH_MOTO[m[K,buff,E2POOM_CAMER_SAVEBUFF);
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

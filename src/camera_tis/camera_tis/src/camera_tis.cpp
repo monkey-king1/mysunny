@@ -25,24 +25,6 @@
 #include <sys/ioctl.h>
 #include <opencv2/opencv.hpp>
 
-#include <ctype.h>
-#include <fcntl.h>
-#include <libgen.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#include <linux/i2c.h>
-#include <linux/i2c-dev.h>
-#include <sys/ioctl.h>
-#include <unistd.h>
-
-
-//#include "i2c_4comm.hpp"
-
-
-#define I2C_DEVICE_NAME_LEN 13	// "/dev/i2c-XXX"+NULL
-static char i2c_device_name[I2C_DEVICE_NAME_LEN];
 
 namespace camera_tis
 {
@@ -66,12 +48,12 @@ CameraTis::CameraTis(const rclcpp::NodeOptions & options)
    * @brief Const expression for image size infomation.
    *
    */
-  WIDTH = 2048;
-  HEIGHT = 1544;
+  WIDTH = camdata.camer_size_width;
+  HEIGHT = camdata.camer_size_height;
   SIZE = WIDTH * HEIGHT;
-  FPS = 30;
-  //VIEW_WIDTH = camdata.camer_size_view_width;
-  //VIEW_HEIGHT = camdata.camer_size_view_height;
+  FPS = camdata.camer_fps;
+  VIEW_WIDTH = camdata.camer_size_view_width;
+  VIEW_HEIGHT = camdata.camer_size_view_height;
 
 //_param_imagepos = std::make_shared<rclcpp::AsyncParametersClient>(this, "laser_imagepos_node");
   _pub = this->create_publisher<Image>(_pub_name, rclcpp::SensorDataQoS());
@@ -123,17 +105,63 @@ void CameraTis::_initialize_camera()
 
   _declare_parameters();
 
+//   gst_debug_set_default_threshold(GST_LEVEL_WARNING);
+//   gst_init(NULL, NULL);
 
+//   char newPIPELINE_STR[500];
+//   sprintf(newPIPELINE_STR,"tcambin name=source"
+//   " ! video/x-raw,format=GRAY8,width=%d,height=%d,framerate=%d/1"
+//   " ! videoscale"
+//   " ! video/x-raw,width=%d,height=%d"
+//   " ! appsink name=sink emit-signals=true sync=false drop=true max-buffers=4",VIEW_WIDTH,VIEW_HEIGHT,FPS,WIDTH,HEIGHT);
+
+//   _pipeline = gst_parse_launch(newPIPELINE_STR, NULL);
+//   if (_pipeline == NULL) {
+//     throw std::runtime_error("TIS parse launch fail");
+//   }
+
+//   // Disable auto exposure and auto gain, set brightness to 0
+  
+//   set_property(_pipeline, "Exposure Auto", false);
+//   set_property(_pipeline, "Gain Auto", false);
+//   set_property(_pipeline, "Brightness", 0);
+
+//   auto e = this->get_parameter("exposure_time").as_int();
+//   if (_set_exposure(e)) {
+//     throw std::runtime_error("TIS set exposure fail");
+//   }
+// //_param_imagepos->set_parameters({rclcpp::Parameter("rember_exposure_time", e)});
+
+//   // Set pipeline state to pause before spin.
+//   gst_element_set_state(_pipeline, GST_STATE_PAUSED);
+//   // Spin infinitely until rclcpp::ok() return false which means termination.
   
 
 
-  //≥ı ºªØœ‡ª˙
+  //ÂàùÂßãÂåñÁõ∏Êú∫
+        std::string v4l2_cmd = "media-ctl -d /dev/media0 --set-v4l2 '\"m00_b_mvcam 5-003b\":0[fmt:Y8_1X8/" +
+                            std::to_string(2048) + "x" + std::to_string(1544) +
+                            "@1/" + std::to_string(45) + " field:none]'";
+
+    system(v4l2_cmd.c_str());
+
+    std::string v4l2src_pipeline = "v4l2src io-mode=dmabuf device=/dev/video0 ! video/x-raw, format=(string)GRAY8, width=(int)" +
+                                    std::to_string(2048) + ", height=(int)" + std::to_string(1544) +
+                                    " ! appsink";
+
+    cv::VideoCapture cap(v4l2src_pipeline, cv::CAP_GSTREAMER);
+
+    if (!cap.isOpened()) 
+    {
+      std::cerr << "Failed to open camera" << std::endl;
+    }
 
 
   _thread = std::thread(&CameraTis::_spin, this);
 
   // ROS parameter callback handle.
-   _handle = this->add_on_set_parameters_callback(
+ 
+  _handle = this->add_on_set_parameters_callback(
     [this](const std::vector<rclcpp::Parameter> & parameters) {
       SetParametersResult result;
       result.successful = true;
@@ -146,14 +174,14 @@ void CameraTis::_initialize_camera()
             return result;
           }
         } 
-        // else if (p.get_name() == "power") {
-        //   auto ret = this->_set_power(p.as_bool());
-        //   if (ret) {
-        //     result.successful = false;
-        //     result.reason = "Failed to set power";
-        //     return result;
-        //   }
-        // }    
+        else if (p.get_name() == "power") {
+          auto ret = this->_set_power(p.as_bool());
+          if (ret) {
+            result.successful = false;
+            result.reason = "Failed to set power";
+            return result;
+          }
+        }    
         else if (p.get_name() == "width") {
           auto ret = this->_set_width(p.as_int());
           if (ret) {
@@ -198,8 +226,6 @@ void CameraTis::_initialize_camera()
       return result;
     }
   );
-
-
 }
 
 #ifdef SHOW_OUTPUT_FPS
@@ -228,54 +254,27 @@ void CameraTis::_modbus(int port)
 
 void CameraTis::_spin()
 {
-//  U32 I2C_port;
-//	U32 device_addr;
-//	U32 reg_addr;
-//	U32 new_data;
-	//U32 value;
-//	struct sensor_regs regs;
-
-//  snprintf(i2c_device_name, sizeof(i2c_device_name), "/dev/i2c-%d", 5);
-	//printf("Using i2C device %s\n", i2c_device_name);
-	
-//	    int fd;
-//	    fd = open(i2c_device_name, O_RDWR);
-//	    if (!fd)
-//	  {
-//		  printf("Couldn't open I2C device\n");
-	//	  return -1;
-//	  }
-//	  if (ioctl(fd, I2C_SLAVE_FORCE, 0x3b) < 0)
-//	  {
-//		  printf("Failed to set I2C address\n");
-	//	  return -1;
-//	  }
+  //GstElement * sink = gst_bin_get_by_name(GST_BIN(_pipeline), "sink");
   int frame = 0;
-  std::string v4l2_cmd = "media-ctl -d /dev/media0 --set-v4l2 '\"m00_b_mvcam 5-003b\":0[fmt:Y8_1X8/" +
-                            std::to_string(2048) + "x" + std::to_string(1544) +
-                            "@1/" + std::to_string(45) + " field:none]'";
-
-    system(v4l2_cmd.c_str());
-
-    std::string v4l2src_pipeline = "v4l2src io-mode=dmabuf device=/dev/video0 ! video/x-raw, format=(string)GRAY8, width=(int)" +
-                                    std::to_string(2048) + ", height=(int)" + std::to_string(1544) +
-                                    " ! appsink";
-
-    cv::VideoCapture cap(v4l2src_pipeline, cv::CAP_GSTREAMER);
-
-    if (!cap.isOpened()) 
-    {
-      std::cerr << "Failed to open camera" << std::endl;
-    }
-
   while (rclcpp::ok()) {
+    //GstSample * sample = NULL;
+    //g_signal_emit_by_name(sink, "pull-sample", &sample, NULL);
+    // if (sample == NULL) {
+    //   continue;
+    // }
+    // GstBuffer * buffer = gst_sample_get_buffer(sample);
+    // if (buffer == NULL) {
+    //   gst_sample_unref(sample);
+    //   continue;
+    // }
 
-      cv::Mat img;
-      cap.read(img);
-      if(img.empty())
-      continue;
-      //std::cout<<"aaa"<<std::endl;
-      std::cout<<img.size()<<std::endl;
+    // Construct a ROS image to publish.
+    //GstMapInfo info;
+
+    cv::Mat img;
+
+
+    if (cap.read(img)) {
       auto ptr = std::make_unique<Image>();
       ptr->header.stamp = this->now();
       ptr->header.frame_id = std::to_string(frame++);
@@ -286,7 +285,7 @@ void CameraTis::_spin()
       ptr->step = WIDTH;
       ptr->data.resize(SIZE);
       memcpy(ptr->data.data(), img.data, SIZE);
-     
+
     #ifdef SHOW_OUTPUT_FPS
       if(b_modbusconnect==true)
       {
@@ -316,126 +315,140 @@ void CameraTis::_spin()
           }
       }
     #endif
+    /*
+      if(b_modbusconnect==true)
+      {
+          auto stamp = ptr->header.stamp;
+          time_t t;
+          u_int16_t msec = ptr->header.stamp.nanosec/1000000;
+          struct tm *p;
+          t=stamp.sec;
+          p=gmtime(&t);  
+          u_int16_t tab_reg[4];
+          tab_reg[0]=(p->tm_hour+8)%24;
+          tab_reg[1]=p->tm_min;
+          tab_reg[2]=p->tm_sec;
+          tab_reg[3]=msec;
+          int rc=modbus_write_registers(ctx,0x0d,4,tab_reg);
+      }
+    */
       _pub->publish(std::move(ptr));
+      //gst_buffer_unmap(buffer, &info);
 
-//	  regs.reg = 0xC10;
-//	  regs.data = 100;
-	
-//	  send_regs(fd, &regs, 1);
-//	  close(fd);
-//  U32 I2C_port;
-//	U32 device_addr;
-//	U32 reg_addr;
-//	U32 new_data;
-	//U32 value;
-//	struct sensor_regs regs;
-
-//    	snprintf(i2c_device_name, sizeof(i2c_device_name), "/dev/i2c-%d", 5);
-	//printf("Using i2C device %s\n", i2c_device_name);
-	
-//	    int fd;
-//	    fd = open(i2c_device_name, O_RDWR);
-//	    if (!fd)
-//	  {
-//		  printf("Couldn't open I2C device\n");
-	//	  return -1;
-//	  }
-//	  if (ioctl(fd, I2C_SLAVE_FORCE, 0x3b) < 0)
-//	  {
-//		  printf("Failed to set I2C address\n");
-	//	  return -1;
-//	  }
-//	  regs.reg = 0xC10;
-//	  regs.data = 100;
-	
-//	  send_regs(fd, &regs, 1);
-//	  close(fd);
+    }
+   // gst_sample_unref(sample);
   }
-
+ // gst_object_unref(sink);
 }
 
+bool CameraTis::_power()
+{
+  return this->get_parameter("power").as_bool();
+}
+
+int CameraTis::_power_on()
+{
+  // if (_power() == false) {
+  //   if (gst_element_set_state(_pipeline, GST_STATE_PLAYING) == GST_STATE_CHANGE_FAILURE) {
+  //     return 1;
+  //   }
+  // }
+
+  return 0;
+}
+
+int CameraTis::_power_off()
+{
+  // if (_power()) {
+  //   if (gst_element_set_state(_pipeline, GST_STATE_PAUSED) == GST_STATE_CHANGE_FAILURE) {
+  //     return 1;
+  //   }
+  // }
+
+  return 0;
+}
+
+int CameraTis::_set_power(bool p)
+{
+  return 0;
+ // return p ? _power_on() : _power_off();
+}
 
 int CameraTis::_set_exposure(int e)
 {
-    U32 I2C_port;
-	U32 device_addr;
-	U32 reg_addr;
-	U32 new_data;
-	//U32 value;
-	struct sensor_regs regs;
-
-    	snprintf(i2c_device_name, sizeof(i2c_device_name), "/dev/i2c-%d", 5);
-	//printf("Using i2C device %s\n", i2c_device_name);
-	
-	    int fd;
-	    fd = open(i2c_device_name, O_RDWR);
-	    if (!fd)
-	  {
-		  printf("Couldn't open I2C device\n");
-	//	  return -1;
-	  }
-	  if (ioctl(fd, I2C_SLAVE_FORCE, 0x3b) < 0)
-	  {
-		  printf("Failed to set I2C address\n");
-	//	  return -1;
-	  }
-	  regs.reg = 0xC10;
-	  regs.data = e;
-	
-	  send_regs(fd, &regs, 1);
-	  close(fd);
-  
-    printf("Success to set exposure time\n");
-  
   return 0;
+  //return set_property(_pipeline, "Exposure Time (us)", e) ? 0 : 1;
 }
 
 int CameraTis::_set_width(int width)
 {
+  if(width<(int)camdata.camer_size_width_min||width>(int)camdata.camer_size_width_max)
+  { 
+    return 1;
+  }
+  else
+  {
+    camdata.camer_size_width=width;
+    camdata.write_camer_para();
+  }
   return 0;
 }
 
 int CameraTis::_set_height(int height)
 {
-
+  if(height<(int)camdata.camer_size_height_min||height>(int)camdata.camer_size_height_max)
+  { 
+    return 1;
+  }
+  else
+  {
+    camdata.camer_size_height=height;
+    camdata.write_camer_para();
+  }
   return 0;
 }
 
 int CameraTis::_set_view_width(int width)
 {
-
+  if(width<(int)camdata.camer_size_view_width_min||width>(int)camdata.camer_size_view_width_max)
+  { 
+    return 1;
+  }
+  else
+  {
+    camdata.camer_size_view_width=width;
+    camdata.write_camer_para();
+  }
   return 0;
 }
 
 int CameraTis::_set_view_height(int height)
 {
+  if(height<(int)camdata.camer_size_view_height_min||height>(int)camdata.camer_size_view_height_max)
+  { 
+    return 1;
+  }
+  else
+  {
+    camdata.camer_size_view_height=height;
+    camdata.write_camer_para();
+  }
   return 0;
 }
 
 int CameraTis::_set_fps(int fps)
 {
+  if(fps<(int)camdata.camer_fps_min||fps>(int)camdata.camer_fps_max)
+  { 
+    return 1;
+  }
+  else
+  {
+    camdata.camer_fps=fps;
+    camdata.write_camer_para();
+  }
   return 0;
 }
-
-void CameraTis::send_regs(int fd,  const struct sensor_regs *regs, int num_regs)
-{
-	int i;
-	for (i=0; i<num_regs; i++)
-	{
-		{
-			unsigned char msg[8] = {regs[i].reg>>8, regs[i].reg, regs[i].data>>24,
-            regs[i].data>>16,regs[i].data>>8,regs[i].data,};
-			int len = 6;
-
-			if (write(fd, msg, len) != len)
-			{
-				printf("Failed to write register index %d", i);
-			}
-		}
-	}
-}
-
-
 
 }  // namespace camera_tis
 
@@ -445,9 +458,3 @@ void CameraTis::send_regs(int fd,  const struct sensor_regs *regs, int num_regs)
 // This acts as a sort of entry point, allowing the component to be discoverable when its library
 // is being loaded into a running process.
 RCLCPP_COMPONENTS_REGISTER_NODE(camera_tis::CameraTis)
-
-
-
-
-
-

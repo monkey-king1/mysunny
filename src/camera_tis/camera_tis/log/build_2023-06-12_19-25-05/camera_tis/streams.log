@@ -1,0 +1,57 @@
+[0.041s] Invoking command in '/home/yj/camera_tis/build/camera_tis': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+[0.143s] [35m[1mScanning dependencies of target camera_tis[0m
+[0.175s] [ 33%] Built target camera_tis_node
+[0.219s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o[0m
+[4.257s] In file included from [01m[K/home/yj/camera_tis/src/camera_tis.cpp:15[m[K:
+[4.257s] [01m[K/home/yj/camera_tis/include/camera_tis/camera_tis.hpp:49:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type; did you mean ‘[01m[Kgcvt[m[K’?
+[4.257s]    49 | [01;31m[Kcv[m[K::VideoCapture cap;
+[4.258s]       | [01;31m[K^~[m[K
+[4.258s]       | [32m[Kgcvt[m[K
+[5.951s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_initialize_camera()[m[K’:
+[5.951s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:143:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope; did you mean ‘[01m[Kwcwidth[m[K’?
+[5.951s]   143 |                             std::to_string([01;31m[Kwidth[m[K) + "x" + std::to_string(height) +
+[5.951s]       |                                            [01;31m[K^~~~~[m[K
+[5.951s]       |                                            [32m[Kwcwidth[m[K
+[5.955s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:143:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope
+[5.955s]   143 |                             std::to_string(width) + "x" + std::to_string([01;31m[Kheight[m[K) +
+[5.955s]       |                                                                          [01;31m[K^~~~~~[m[K
+[5.958s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:144:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kfps[m[K’ was not declared in this scope; did you mean ‘[01m[Kffs[m[K’?
+[5.958s]   144 |                             "@1/" + std::to_string([01;31m[Kfps[m[K) + " field:none]'";
+[5.958s]       |                                                    [01;31m[K^~~[m[K
+[5.958s]       |                                                    [32m[Kffs[m[K
+[5.978s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_modbus(int)[m[K’:
+[5.978s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:232:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kport[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.978s]   232 | void CameraTis::_modbus([01;35m[Kint port[m[K)
+[5.978s]       |                         [01;35m[K~~~~^~~~[m[K
+[5.981s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_spin()[m[K’:
+[5.981s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:277:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+[5.981s]   277 |     if ([01;31m[Kcap[m[K.read(img)) {
+[5.982s]       |         [01;31m[K^~~[m[K
+[6.011s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_power_on()[m[K’:
+[6.011s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:42:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_PLAYING[m[K’ was not declared in this scope
+[6.011s]   352 |     if (gst_element_set_state(_pipeline, [01;31m[KGST_STATE_PLAYING[m[K) == GST_STATE_CHANGE_FAILURE) {
+[6.011s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[6.025s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgst_element_set_state[m[K’ was not declared in this scope
+[6.025s]   352 |     if ([01;31m[Kgst_element_set_state[m[K(_pipeline, GST_STATE_PLAYING) == GST_STATE_CHANGE_FAILURE) {
+[6.025s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.041s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:64:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_CHANGE_FAILURE[m[K’ was not declared in this scope
+[6.041s]   352 |     if (gst_element_set_state(_pipeline, GST_STATE_PLAYING) == [01;31m[KGST_STATE_CHANGE_FAILURE[m[K) {
+[6.041s]       |                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.052s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_power_off()[m[K’:
+[6.052s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:42:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_PAUSED[m[K’ was not declared in this scope
+[6.052s]   363 |     if (gst_element_set_state(_pipeline, [01;31m[KGST_STATE_PAUSED[m[K) == GST_STATE_CHANGE_FAILURE) {
+[6.052s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.065s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgst_element_set_state[m[K’ was not declared in this scope
+[6.065s]   363 |     if ([01;31m[Kgst_element_set_state[m[K(_pipeline, GST_STATE_PAUSED) == GST_STATE_CHANGE_FAILURE) {
+[6.065s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.079s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:63:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_CHANGE_FAILURE[m[K’ was not declared in this scope
+[6.079s]   363 |     if (gst_element_set_state(_pipeline, GST_STATE_PAUSED) == [01;31m[KGST_STATE_CHANGE_FAILURE[m[K) {
+[6.079s]       |                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.088s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_set_exposure(int)[m[K’:
+[6.088s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:378:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_property[m[K’ was not declared in this scope
+[6.088s]   378 |   return [01;31m[Kset_property[m[K(_pipeline, "Exposure Time (us)", e) ? 0 : 1;
+[6.088s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[9.214s] make[2]: *** [CMakeFiles/camera_tis.dir/build.make:63: CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o] Error 1
+[9.215s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2
+[9.215s] make: *** [Makefile:141: all] Error 2
+[9.220s] Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16

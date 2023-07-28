@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.003021] (camera_tis) JobQueued: {'identifier': 'camera_tis', 'dependencies': OrderedDict()}
+[0.003232] (camera_tis) JobStarted: {'identifier': 'camera_tis'}
+[0.026348] (camera_tis) JobProgress: {'identifier': 'camera_tis', 'progress': 'cmake'}
+[0.034253] (camera_tis) Command: {'cmd': ['/usr/bin/cmake', '/home/yj/camera_tis', '-DCMAKE_INSTALL_PREFIX=/home/yj/camera_tis/install/camera_tis'], 'cwd': '/home/yj/camera_tis/build/camera_tis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yj'), ('SSH_AGENT_PID', '4006'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/yj'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '3808'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3df8e2b36b4122c8e5c0ffd26487c77c'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yj'), ('JOURNAL_STREAM', '8:66659'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4057,unix/ubuntu:/tmp/.ICE-unix/4057'), ('INVOCATION_ID', 'fa363cba5fc94d86908cb55ff5a86cb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20987214_3bc1_47ad_aca8_117868a5abc1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yj/camera_tis/build/camera_tis'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3df8e2b36b4122c8e5c0ffd26487c77c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.063859] (camera_tis) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.098724] (-) TimerEvent: {}
+[0.111614] (camera_tis) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.198986] (-) TimerEvent: {}
+[0.243733] (camera_tis) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.299353] (-) TimerEvent: {}
+[0.323486] (camera_tis) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.330877] (camera_tis) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.399594] (-) TimerEvent: {}
+[0.500056] (-) TimerEvent: {}
+[0.578096] (camera_tis) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600209] (-) TimerEvent: {}
+[0.689522] (camera_tis) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[0.693205] (camera_tis) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.700543] (-) TimerEvent: {}
+[0.732664] (camera_tis) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.800881] (-) TimerEvent: {}
+[0.901503] (-) TimerEvent: {}
+[1.002335] (-) TimerEvent: {}
+[1.031658] (camera_tis) StdoutLine: {'line': b'-- Found rclcpp_components: 9.2.2 (/opt/ros/galactic/share/rclcpp_components/cmake)\n'}
+[1.102543] (-) TimerEvent: {}
+[1.140589] (camera_tis) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[1.202737] (-) TimerEvent: {}
+[1.303338] (-) TimerEvent: {}
+[1.387459] (camera_tis) StdoutLine: {'line': b"-- Checking for module 'libmodbus'\n"}
+[1.403569] (-) TimerEvent: {}
+[1.422637] (camera_tis) StdoutLine: {'line': b'--   Found libmodbus, version 3.1.6\n'}
+[1.503905] (-) TimerEvent: {}
+[1.521642] (camera_tis) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[1.604700] (-) TimerEvent: {}
+[1.673569] (camera_tis) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.687592] (camera_tis) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.688223] (camera_tis) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yj/camera_tis/include>\n'}
+[1.688357] (camera_tis) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.700864] (camera_tis) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.701101] (camera_tis) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.703666] (camera_tis) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.704962] (-) TimerEvent: {}
+[1.707661] (camera_tis) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.710611] (camera_tis) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.722924] (camera_tis) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.723153] (camera_tis) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.725394] (camera_tis) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.733310] (camera_tis) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.770110] (camera_tis) StdoutLine: {'line': b'-- Generating done\n'}
+[1.773357] (camera_tis) StdoutLine: {'line': b'-- Build files have been written to: /home/yj/camera_tis/build/camera_tis\n'}
+[1.782426] (camera_tis) CommandEnded: {'returncode': 0}
+[1.783910] (camera_tis) JobProgress: {'identifier': 'camera_tis', 'progress': 'build'}
+[1.785753] (camera_tis) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yj/camera_tis/build/camera_tis', '--', '-j16', '-l16'], 'cwd': '/home/yj/camera_tis/build/camera_tis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yj'), ('SSH_AGENT_PID', '4006'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/yj'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '3808'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3df8e2b36b4122c8e5c0ffd26487c77c'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yj'), ('JOURNAL_STREAM', '8:66659'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4057,unix/ubuntu:/tmp/.ICE-unix/4057'), ('INVOCATION_ID', 'fa363cba5fc94d86908cb55ff5a86cb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20987214_3bc1_47ad_aca8_117868a5abc1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yj/camera_tis/build/camera_tis'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3df8e2b36b4122c8e5c0ffd26487c77c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[1.805304] (-) TimerEvent: {}
+[1.881934] (camera_tis) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target camera_tis_node\x1b[0m\n'}
+[1.892159] (camera_tis) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target camera_tis\x1b[0m\n'}
+[1.905398] (-) TimerEvent: {}
+[1.968503] (camera_tis) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis_node.dir/rclcpp_components/node_main_camera_tis_node.cpp.o\x1b[0m\n'}
+[2.003530] (camera_tis) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o\x1b[0m\n'}
+[2.005781] (-) TimerEvent: {}
+[2.006511] (camera_tis) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis.dir/src/FileOut.cpp.o\x1b[0m\n'}
+[2.010654] (camera_tis) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis.dir/src/E2camData.cpp.o\x1b[0m\n'}
+[2.106344] (-) TimerEvent: {}
+[2.207180] (-) TimerEvent: {}
+[2.307789] (-) TimerEvent: {}
+[2.408357] (-) TimerEvent: {}
+[2.508803] (-) TimerEvent: {}
+[2.544654] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:26:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kopencv2/opencv.hpp: No such file or directory\n'}
+[2.545001] (camera_tis) StderrLine: {'line': b'   26 | #include \x1b[01;31m\x1b[K<opencv2/opencv.hpp>\x1b[m\x1b[K\n'}
+[2.545120] (camera_tis) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.545212] (camera_tis) StderrLine: {'line': b'compilation terminated.\n'}
+[2.552202] (camera_tis) StderrLine: {'line': b'make[2]: *** [CMakeFiles/camera_tis.dir/build.make:63: CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o] Error 1\n'}
+[2.552519] (camera_tis) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[2.609108] (-) TimerEvent: {}
+[2.709735] (-) TimerEvent: {}
+[2.721784] (camera_tis) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/yj/camera_tis/src/E2camData.cpp:1\x1b[m\x1b[K:\n'}
+[2.722105] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/E2camData.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid E2proomData::read_para()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.722250] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/include/fileout/E2camData.h:13:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[2.722833] (camera_tis) StderrLine: {'line': b'   13 | #define E2POOM_CAMER_SYSPATH_MOTO   \x1b[01;35m\x1b[K"./SAVE/E2P_CAMER_DLG.bsd"\x1b[m\x1b[K\n'}
+[2.723062] (camera_tis) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.723326] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/E2camData.cpp:66:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.723423] (camera_tis) StderrLine: {'line': b'   66 |     if(0 > fo.ReadFile(\x1b[01;36m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K,buff,E2POOM_CAMER_SAVEBUFF))\n'}
+[2.723480] (camera_tis) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.723531] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/E2camData.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid E2proomData::write_camer_para()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.723584] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/include/fileout/E2camData.h:13:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[2.723646] (camera_tis) StderrLine: {'line': b'   13 | #define E2POOM_CAMER_SYSPATH_MOTO   \x1b[01;35m\x1b[K"./SAVE/E2P_CAMER_DLG.bsd"\x1b[m\x1b[K\n'}
+[2.723699] (camera_tis) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.723745] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/E2camData.cpp:125:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.723794] (camera_tis) StderrLine: {'line': b'  125 |     fo.WriteFile(\x1b[01;36m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K,buff,E2POOM_CAMER_SAVEBUFF);\n'}
+[2.723840] (camera_tis) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.810006] (-) TimerEvent: {}
+[2.844885] (camera_tis) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2\n'}
+[2.845103] (camera_tis) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[2.910476] (-) TimerEvent: {}
+[3.011352] (-) TimerEvent: {}
+[3.111935] (-) TimerEvent: {}
+[3.212622] (-) TimerEvent: {}
+[3.313165] (-) TimerEvent: {}
+[3.413845] (-) TimerEvent: {}
+[3.514988] (-) TimerEvent: {}
+[3.615677] (-) TimerEvent: {}
+[3.716519] (-) TimerEvent: {}
+[3.817255] (-) TimerEvent: {}
+[3.917951] (-) TimerEvent: {}
+[4.018745] (-) TimerEvent: {}
+[4.119585] (-) TimerEvent: {}
+[4.220322] (-) TimerEvent: {}
+[4.321473] (-) TimerEvent: {}
+[4.422277] (-) TimerEvent: {}
+[4.523334] (-) TimerEvent: {}
+[4.624099] (-) TimerEvent: {}
+[4.724867] (-) TimerEvent: {}
+[4.825638] (-) TimerEvent: {}
+[4.926343] (-) TimerEvent: {}
+[5.027172] (-) TimerEvent: {}
+[5.128117] (-) TimerEvent: {}
+[5.228768] (-) TimerEvent: {}
+[5.329417] (-) TimerEvent: {}
+[5.430148] (-) TimerEvent: {}
+[5.530984] (-) TimerEvent: {}
+[5.631606] (-) TimerEvent: {}
+[5.732211] (-) TimerEvent: {}
+[5.833078] (-) TimerEvent: {}
+[5.933725] (-) TimerEvent: {}
+[6.034468] (-) TimerEvent: {}
+[6.136185] (-) TimerEvent: {}
+[6.236757] (-) TimerEvent: {}
+[6.337445] (-) TimerEvent: {}
+[6.438170] (-) TimerEvent: {}
+[6.539065] (-) TimerEvent: {}
+[6.639954] (-) TimerEvent: {}
+[6.740724] (-) TimerEvent: {}
+[6.841447] (-) TimerEvent: {}
+[6.942173] (-) TimerEvent: {}
+[7.042819] (-) TimerEvent: {}
+[7.148562] (-) TimerEvent: {}
+[7.250257] (-) TimerEvent: {}
+[7.350990] (-) TimerEvent: {}
+[7.451619] (-) TimerEvent: {}
+[7.552484] (-) TimerEvent: {}
+[7.625094] (camera_tis) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable camera_tis_node\x1b[0m\n'}
+[7.652661] (-) TimerEvent: {}
+[7.753175] (-) TimerEvent: {}
+[7.853861] (-) TimerEvent: {}
+[7.899868] (camera_tis) StdoutLine: {'line': b'[ 83%] Built target camera_tis_node\n'}
+[7.901689] (camera_tis) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.906913] (camera_tis) CommandEnded: {'returncode': 2}
+[7.954349] (-) TimerEvent: {}
+[8.028519] (camera_tis) JobEnded: {'identifier': 'camera_tis', 'rc': 2}
+[8.030990] (-) EventReactorShutdown: {}

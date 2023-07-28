@@ -1,0 +1,47 @@
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_initialize_camera()[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:143:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope; did you mean ‘[01m[Kwcwidth[m[K’?
+  143 |                             std::to_string([01;31m[Kwidth[m[K) + "x" + std::to_string(height) +
+      |                                            [01;31m[K^~~~~[m[K
+      |                                            [32m[Kwcwidth[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:143:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope
+  143 |                             std::to_string(width) + "x" + std::to_string([01;31m[Kheight[m[K) +
+      |                                                                          [01;31m[K^~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:144:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kfps[m[K’ was not declared in this scope; did you mean ‘[01m[Kffs[m[K’?
+  144 |                             "@1/" + std::to_string([01;31m[Kfps[m[K) + " field:none]'";
+      |                                                    [01;31m[K^~~[m[K
+      |                                                    [32m[Kffs[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_modbus(int)[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:232:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kport[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  232 | void CameraTis::_modbus([01;35m[Kint port[m[K)
+      |                         [01;35m[K~~~~^~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_spin()[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:277:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+  277 |     if ([01;31m[Kcap[m[K.read(img)) {
+      |         [01;31m[K^~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_power_on()[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:42:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_PLAYING[m[K’ was not declared in this scope
+  352 |     if (gst_element_set_state(_pipeline, [01;31m[KGST_STATE_PLAYING[m[K) == GST_STATE_CHANGE_FAILURE) {
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgst_element_set_state[m[K’ was not declared in this scope
+  352 |     if ([01;31m[Kgst_element_set_state[m[K(_pipeline, GST_STATE_PLAYING) == GST_STATE_CHANGE_FAILURE) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:64:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_CHANGE_FAILURE[m[K’ was not declared in this scope
+  352 |     if (gst_element_set_state(_pipeline, GST_STATE_PLAYING) == [01;31m[KGST_STATE_CHANGE_FAILURE[m[K) {
+      |                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_power_off()[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:42:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_PAUSED[m[K’ was not declared in this scope
+  363 |     if (gst_element_set_state(_pipeline, [01;31m[KGST_STATE_PAUSED[m[K) == GST_STATE_CHANGE_FAILURE) {
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgst_element_set_state[m[K’ was not declared in this scope
+  363 |     if ([01;31m[Kgst_element_set_state[m[K(_pipeline, GST_STATE_PAUSED) == GST_STATE_CHANGE_FAILURE) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:63:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_CHANGE_FAILURE[m[K’ was not declared in this scope
+  363 |     if (gst_element_set_state(_pipeline, GST_STATE_PAUSED) == [01;31m[KGST_STATE_CHANGE_FAILURE[m[K) {
+      |                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_set_exposure(int)[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:378:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_property[m[K’ was not declared in this scope
+  378 |   return [01;31m[Kset_property[m[K(_pipeline, "Exposure Time (us)", e) ? 0 : 1;
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/camera_tis.dir/build.make:63: CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
