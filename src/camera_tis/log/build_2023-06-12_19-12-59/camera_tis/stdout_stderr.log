@@ -1,0 +1,61 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclcpp_components: 9.2.2 (/opt/ros/galactic/share/rclcpp_components/cmake)
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Checking for module 'libmodbus'
+--   Found libmodbus, version 3.1.6
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yj/camera_tis/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yj/camera_tis/build/camera_tis
+[35m[1mScanning dependencies of target camera_tis_node[0m
+[35m[1mScanning dependencies of target camera_tis[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/camera_tis_node.dir/rclcpp_components/node_main_camera_tis_node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/FileOut.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/E2camData.cpp.o[0m
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:26:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+   26 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/camera_tis.dir/build.make:63: CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/yj/camera_tis/src/E2camData.cpp:1[m[K:
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:[m[K In member function ‘[01m[Kvoid E2proomData::read_para()[m[K’:
+[01m[K/home/yj/camera_tis/include/fileout/E2camData.h:13:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   13 | #define E2POOM_CAMER_SYSPATH_MOTO   [01;35m[K"./SAVE/E2P_CAMER_DLG.bsd"[m[K
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:66:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KE2POOM_CAMER_SYSPATH_MOTO[m[K’
+   66 |     if(0 > fo.ReadFile([01;36m[KE2POOM_CAMER_SYSPATH_MOTO[m[K,buff,E2POOM_CAMER_SAVEBUFF))
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:[m[K In member function ‘[01m[Kvoid E2proomData::write_camer_para()[m[K’:
+[01m[K/home/yj/camera_tis/include/fileout/E2camData.h:13:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   13 | #define E2POOM_CAMER_SYSPATH_MOTO   [01;35m[K"./SAVE/E2P_CAMER_DLG.bsd"[m[K
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yj/camera_tis/src/E2camData.cpp:125:18:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KE2POOM_CAMER_SYSPATH_MOTO[m[K’
+  125 |     fo.WriteFile([01;36m[KE2POOM_CAMER_SYSPATH_MOTO[m[K,buff,E2POOM_CAMER_SAVEBUFF);
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 83%] [32m[1mLinking CXX executable camera_tis_node[0m
+[ 83%] Built target camera_tis_node
+make: *** [Makefile:141: all] Error 2

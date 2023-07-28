@@ -1,0 +1,152 @@
+[0.000000] (-) TimerEvent: {}
+[0.000983] (camera_tis) JobQueued: {'identifier': 'camera_tis', 'dependencies': OrderedDict()}
+[0.002772] (camera_tis) JobStarted: {'identifier': 'camera_tis'}
+[0.026568] (camera_tis) JobProgress: {'identifier': 'camera_tis', 'progress': 'cmake'}
+[0.029014] (camera_tis) JobProgress: {'identifier': 'camera_tis', 'progress': 'build'}
+[0.029163] (camera_tis) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yj/camera_tis/build/camera_tis', '--', '-j16', '-l16'], 'cwd': '/home/yj/camera_tis/build/camera_tis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yj'), ('SSH_AGENT_PID', '4006'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/yj'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '3808'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3df8e2b36b4122c8e5c0ffd26487c77c'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'yj'), ('JOURNAL_STREAM', '8:66659'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4057,unix/ubuntu:/tmp/.ICE-unix/4057'), ('INVOCATION_ID', 'fa363cba5fc94d86908cb55ff5a86cb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/436b49ef_779d_495c_97ea_4220babd8b11'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.179'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yj/camera_tis/build/camera_tis'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3df8e2b36b4122c8e5c0ffd26487c77c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.100026] (-) TimerEvent: {}
+[0.172232] (camera_tis) StdoutLine: {'line': b'[ 33%] Built target camera_tis_node\n'}
+[0.175557] (camera_tis) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o\x1b[0m\n'}
+[0.200146] (-) TimerEvent: {}
+[0.300729] (-) TimerEvent: {}
+[0.401203] (-) TimerEvent: {}
+[0.501746] (-) TimerEvent: {}
+[0.602460] (-) TimerEvent: {}
+[0.703037] (-) TimerEvent: {}
+[0.804247] (-) TimerEvent: {}
+[0.904720] (-) TimerEvent: {}
+[1.005614] (-) TimerEvent: {}
+[1.106169] (-) TimerEvent: {}
+[1.206668] (-) TimerEvent: {}
+[1.307334] (-) TimerEvent: {}
+[1.407936] (-) TimerEvent: {}
+[1.508520] (-) TimerEvent: {}
+[1.609194] (-) TimerEvent: {}
+[1.709862] (-) TimerEvent: {}
+[1.810588] (-) TimerEvent: {}
+[1.911415] (-) TimerEvent: {}
+[2.011931] (-) TimerEvent: {}
+[2.112568] (-) TimerEvent: {}
+[2.213498] (-) TimerEvent: {}
+[2.314471] (-) TimerEvent: {}
+[2.415336] (-) TimerEvent: {}
+[2.515984] (-) TimerEvent: {}
+[2.616783] (-) TimerEvent: {}
+[2.717562] (-) TimerEvent: {}
+[2.818029] (-) TimerEvent: {}
+[2.918728] (-) TimerEvent: {}
+[3.019465] (-) TimerEvent: {}
+[3.120471] (-) TimerEvent: {}
+[3.221192] (-) TimerEvent: {}
+[3.321919] (-) TimerEvent: {}
+[3.422779] (-) TimerEvent: {}
+[3.523697] (-) TimerEvent: {}
+[3.624427] (-) TimerEvent: {}
+[3.725071] (-) TimerEvent: {}
+[3.825688] (-) TimerEvent: {}
+[3.926270] (-) TimerEvent: {}
+[3.971669] (camera_tis) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:15\x1b[m\x1b[K:\n'}
+[3.971977] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/include/camera_tis/camera_tis.hpp:49:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgcvt\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.972082] (camera_tis) StderrLine: {'line': b'   49 | \x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::VideoCapture cap;\n'}
+[3.972205] (camera_tis) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.972299] (camera_tis) StderrLine: {'line': b'      | \x1b[32m\x1b[Kgcvt\x1b[m\x1b[K\n'}
+[4.026581] (-) TimerEvent: {}
+[4.127341] (-) TimerEvent: {}
+[4.227965] (-) TimerEvent: {}
+[4.328775] (-) TimerEvent: {}
+[4.429531] (-) TimerEvent: {}
+[4.530457] (-) TimerEvent: {}
+[4.631034] (-) TimerEvent: {}
+[4.731859] (-) TimerEvent: {}
+[4.832469] (-) TimerEvent: {}
+[4.933412] (-) TimerEvent: {}
+[5.034221] (-) TimerEvent: {}
+[5.134763] (-) TimerEvent: {}
+[5.235251] (-) TimerEvent: {}
+[5.335879] (-) TimerEvent: {}
+[5.437103] (-) TimerEvent: {}
+[5.539507] (-) TimerEvent: {}
+[5.633552] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid camera_tis::CameraTis::_initialize_camera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.634038] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:143:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwidth\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kwcwidth\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.634228] (camera_tis) StderrLine: {'line': b'  143 |                             std::to_string(\x1b[01;31m\x1b[Kwidth\x1b[m\x1b[K) + "x" + std::to_string(height) +\n'}
+[5.634309] (camera_tis) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.634367] (camera_tis) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Kwcwidth\x1b[m\x1b[K\n'}
+[5.637689] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:143:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kheight\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.637935] (camera_tis) StderrLine: {'line': b'  143 |                             std::to_string(width) + "x" + std::to_string(\x1b[01;31m\x1b[Kheight\x1b[m\x1b[K) +\n'}
+[5.638046] (camera_tis) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.639780] (-) TimerEvent: {}
+[5.640878] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:144:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfps\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kffs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.641016] (camera_tis) StderrLine: {'line': b'  144 |                             "@1/" + std::to_string(\x1b[01;31m\x1b[Kfps\x1b[m\x1b[K) + " field:none]\'";\n'}
+[5.641080] (camera_tis) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.641131] (camera_tis) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[Kffs\x1b[m\x1b[K\n'}
+[5.659729] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid camera_tis::CameraTis::_modbus(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.659885] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:232:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kport\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.659947] (camera_tis) StderrLine: {'line': b'  232 | void CameraTis::_modbus(\x1b[01;35m\x1b[Kint port\x1b[m\x1b[K)\n'}
+[5.660001] (camera_tis) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[5.663996] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid camera_tis::CameraTis::_spin()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.664237] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:277:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcap\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.664346] (camera_tis) StderrLine: {'line': b'  277 |     if (\x1b[01;31m\x1b[Kcap\x1b[m\x1b[K.read(img)) {\n'}
+[5.664438] (camera_tis) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.696932] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint camera_tis::CameraTis::_power_on()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.697170] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:352:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGST_STATE_PLAYING\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.697245] (camera_tis) StderrLine: {'line': b'  352 |     if (gst_element_set_state(_pipeline, \x1b[01;31m\x1b[KGST_STATE_PLAYING\x1b[m\x1b[K) == GST_STATE_CHANGE_FAILURE) {\n'}
+[5.697305] (camera_tis) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.710653] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:352:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgst_element_set_state\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.711236] (camera_tis) StderrLine: {'line': b'  352 |     if (\x1b[01;31m\x1b[Kgst_element_set_state\x1b[m\x1b[K(_pipeline, GST_STATE_PLAYING) == GST_STATE_CHANGE_FAILURE) {\n'}
+[5.711486] (camera_tis) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.726441] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:352:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGST_STATE_CHANGE_FAILURE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.726736] (camera_tis) StderrLine: {'line': b'  352 |     if (gst_element_set_state(_pipeline, GST_STATE_PLAYING) == \x1b[01;31m\x1b[KGST_STATE_CHANGE_FAILURE\x1b[m\x1b[K) {\n'}
+[5.726891] (camera_tis) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.738136] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint camera_tis::CameraTis::_power_off()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.738271] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:363:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGST_STATE_PAUSED\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.738342] (camera_tis) StderrLine: {'line': b'  363 |     if (gst_element_set_state(_pipeline, \x1b[01;31m\x1b[KGST_STATE_PAUSED\x1b[m\x1b[K) == GST_STATE_CHANGE_FAILURE) {\n'}
+[5.738397] (camera_tis) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.739949] (-) TimerEvent: {}
+[5.750363] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:363:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgst_element_set_state\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.750700] (camera_tis) StderrLine: {'line': b'  363 |     if (\x1b[01;31m\x1b[Kgst_element_set_state\x1b[m\x1b[K(_pipeline, GST_STATE_PAUSED) == GST_STATE_CHANGE_FAILURE) {\n'}
+[5.750961] (camera_tis) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.767942] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:363:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGST_STATE_CHANGE_FAILURE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.768201] (camera_tis) StderrLine: {'line': b'  363 |     if (gst_element_set_state(_pipeline, GST_STATE_PAUSED) == \x1b[01;31m\x1b[KGST_STATE_CHANGE_FAILURE\x1b[m\x1b[K) {\n'}
+[5.768267] (camera_tis) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.778763] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint camera_tis::CameraTis::_set_exposure(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.779052] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yj/camera_tis/src/camera_tis.cpp:378:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_property\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.779159] (camera_tis) StderrLine: {'line': b'  378 |   return \x1b[01;31m\x1b[Kset_property\x1b[m\x1b[K(_pipeline, "Exposure Time (us)", e) ? 0 : 1;\n'}
+[5.779565] (camera_tis) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.840269] (-) TimerEvent: {}
+[5.941302] (-) TimerEvent: {}
+[6.041977] (-) TimerEvent: {}
+[6.142724] (-) TimerEvent: {}
+[6.243316] (-) TimerEvent: {}
+[6.344139] (-) TimerEvent: {}
+[6.444846] (-) TimerEvent: {}
+[6.545543] (-) TimerEvent: {}
+[6.646416] (-) TimerEvent: {}
+[6.747354] (-) TimerEvent: {}
+[6.848057] (-) TimerEvent: {}
+[6.948785] (-) TimerEvent: {}
+[7.049595] (-) TimerEvent: {}
+[7.150170] (-) TimerEvent: {}
+[7.250910] (-) TimerEvent: {}
+[7.351502] (-) TimerEvent: {}
+[7.452254] (-) TimerEvent: {}
+[7.553018] (-) TimerEvent: {}
+[7.653982] (-) TimerEvent: {}
+[7.754539] (-) TimerEvent: {}
+[7.855096] (-) TimerEvent: {}
+[7.955622] (-) TimerEvent: {}
+[8.056297] (-) TimerEvent: {}
+[8.157142] (-) TimerEvent: {}
+[8.257657] (-) TimerEvent: {}
+[8.358440] (-) TimerEvent: {}
+[8.459171] (-) TimerEvent: {}
+[8.559724] (-) TimerEvent: {}
+[8.660705] (-) TimerEvent: {}
+[8.761459] (-) TimerEvent: {}
+[8.827325] (camera_tis) StderrLine: {'line': b'make[2]: *** [CMakeFiles/camera_tis.dir/build.make:63: CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o] Error 1\n'}
+[8.828173] (camera_tis) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2\n'}
+[8.828923] (camera_tis) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.832929] (camera_tis) CommandEnded: {'returncode': 2}
+[8.861794] (-) TimerEvent: {}
+[8.962522] (-) TimerEvent: {}
+[8.964237] (camera_tis) JobEnded: {'identifier': 'camera_tis', 'rc': 2}
+[8.975662] (-) EventReactorShutdown: {}

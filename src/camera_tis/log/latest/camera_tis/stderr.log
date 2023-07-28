@@ -1,0 +1,27 @@
+In file included from [01m[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:1[m[K:
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:[m[K In member function ‘[01m[Kvoid E2proomData::read_para()[m[K’:
+[01m[K/home/firefly/test_mysunny/src/camera_tis/include/fileout/E2camData.h:13:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   13 | #define E2POOM_CAMER_SYSPATH_MOTO   [01;35m[K"./SAVE/E2P_CAMER_DLG.bsd"[m[K
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:66:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KE2POOM_CAMER_SYSPATH_MOTO[m[K’
+   66 |     if(0 > fo.ReadFile([01;36m[KE2POOM_CAMER_SYSPATH_MOTO[m[K,buff,E2POOM_CAMER_SAVEBUFF))
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:[m[K In member function ‘[01m[Kvoid E2proomData::write_camer_para()[m[K’:
+[01m[K/home/firefly/test_mysunny/src/camera_tis/include/fileout/E2camData.h:13:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   13 | #define E2POOM_CAMER_SYSPATH_MOTO   [01;35m[K"./SAVE/E2P_CAMER_DLG.bsd"[m[K
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:125:18:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KE2POOM_CAMER_SYSPATH_MOTO[m[K’
+  125 |     fo.WriteFile([01;36m[KE2POOM_CAMER_SYSPATH_MOTO[m[K,buff,E2POOM_CAMER_SAVEBUFF);
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_modbus(int)[m[K’:
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:232:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kport[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  232 | void CameraTis::_modbus([01;35m[Kint port[m[K)
+      |                         [01;35m[K~~~~^~~~[m[K
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_set_power(bool)[m[K’:
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:371:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  371 | int CameraTis::_set_power([01;35m[Kbool p[m[K)
+      |                           [01;35m[K~~~~~^[m[K
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_set_exposure(int)[m[K’:
+[01m[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:377:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ke[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  377 | int CameraTis::_set_exposure([01;35m[Kint e[m[K)
+      |                              [01;35m[K~~~~^[m[K

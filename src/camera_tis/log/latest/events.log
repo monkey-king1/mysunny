@@ -1,0 +1,271 @@
+[0.000000] (-) TimerEvent: {}
+[0.001790] (camera_tis) JobQueued: {'identifier': 'camera_tis', 'dependencies': OrderedDict()}
+[0.001938] (camera_tis) JobStarted: {'identifier': 'camera_tis'}
+[0.028302] (camera_tis) JobProgress: {'identifier': 'camera_tis', 'progress': 'cmake'}
+[0.029653] (camera_tis) Command: {'cmd': ['/usr/bin/cmake', '/home/firefly/test_mysunny/src/camera_tis', '-DCMAKE_INSTALL_PREFIX=/home/firefly/test_mysunny/src/camera_tis/install/camera_tis'], 'cwd': '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('C_INCLUDE_PATH', '/usr/include/libdrm:'), ('GST_V4L2_PREFERRED_FOURCC', 'YU12'), ('USER', 'firefly'), ('SSH_CLIENT', '192.168.1.11 2355 22'), ('XDG_SESSION_TYPE', 'tty'), ('MOZ_DISABLE_RDD_SANDBOX', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/firefly'), ('OLDPWD', '/home/firefly/test_mysunny/src'), ('SSH_TTY', '/dev/pts/0'), ('GST_MPP_VIDEODEC_DEFAULT_ARM_AFBC', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('GST_VIDEO_CONVERT_USE_RGA', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('CPLUS_INCLUDE_PATH', '/usr/include/libdrm:'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'firefly'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('WEBKIT_DISABLE_COMPOSITING_MODE', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.11 2355 192.168.1.2 22'), ('XDG_DATA_DIRS', '/home/firefly/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('GST_VIDEO_FLIP_USE_RGA', '1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.099317] (-) TimerEvent: {}
+[0.115816] (camera_tis) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.195393] (camera_tis) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.199398] (-) TimerEvent: {}
+[0.300370] (-) TimerEvent: {}
+[0.383184] (camera_tis) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.400581] (-) TimerEvent: {}
+[0.441952] (camera_tis) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.446139] (camera_tis) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.501002] (-) TimerEvent: {}
+[0.602318] (-) TimerEvent: {}
+[0.703632] (-) TimerEvent: {}
+[0.752485] (camera_tis) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.803866] (-) TimerEvent: {}
+[0.831895] (camera_tis) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[0.833916] (camera_tis) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.858755] (camera_tis) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.904170] (-) TimerEvent: {}
+[1.005225] (-) TimerEvent: {}
+[1.056977] (camera_tis) StdoutLine: {'line': b'-- Found rclcpp_components: 9.2.2 (/opt/ros/galactic/share/rclcpp_components/cmake)\n'}
+[1.105539] (-) TimerEvent: {}
+[1.129539] (camera_tis) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[1.205872] (-) TimerEvent: {}
+[1.306909] (-) TimerEvent: {}
+[1.312886] (camera_tis) StdoutLine: {'line': b"-- Checking for module 'libmodbus'\n"}
+[1.391213] (camera_tis) StdoutLine: {'line': b'--   Found libmodbus, version 3.1.6\n'}
+[1.407219] (-) TimerEvent: {}
+[1.508358] (-) TimerEvent: {}
+[1.609625] (-) TimerEvent: {}
+[1.611140] (camera_tis) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[1.709936] (-) TimerEvent: {}
+[1.811191] (-) TimerEvent: {}
+[1.873208] (camera_tis) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.911445] (-) TimerEvent: {}
+[1.928563] (camera_tis) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.930233] (camera_tis) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/firefly/test_mysunny/src/camera_tis/include>\n'}
+[1.931132] (camera_tis) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.969564] (camera_tis) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.970717] (camera_tis) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.974902] (camera_tis) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.984121] (camera_tis) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.989172] (camera_tis) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[2.011599] (-) TimerEvent: {}
+[2.018309] (camera_tis) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.019652] (camera_tis) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.024297] (camera_tis) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.034270] (camera_tis) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.069362] (camera_tis) StdoutLine: {'line': b'-- Generating done\n'}
+[2.072565] (camera_tis) StdoutLine: {'line': b'-- Build files have been written to: /home/firefly/test_mysunny/src/camera_tis/build/camera_tis\n'}
+[2.090033] (camera_tis) CommandEnded: {'returncode': 0}
+[2.093093] (camera_tis) JobProgress: {'identifier': 'camera_tis', 'progress': 'build'}
+[2.097119] (camera_tis) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis', '--', '-j8', '-l8'], 'cwd': '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('C_INCLUDE_PATH', '/usr/include/libdrm:'), ('GST_V4L2_PREFERRED_FOURCC', 'YU12'), ('USER', 'firefly'), ('SSH_CLIENT', '192.168.1.11 2355 22'), ('XDG_SESSION_TYPE', 'tty'), ('MOZ_DISABLE_RDD_SANDBOX', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/firefly'), ('OLDPWD', '/home/firefly/test_mysunny/src'), ('SSH_TTY', '/dev/pts/0'), ('GST_MPP_VIDEODEC_DEFAULT_ARM_AFBC', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('GST_VIDEO_CONVERT_USE_RGA', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('CPLUS_INCLUDE_PATH', '/usr/include/libdrm:'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'firefly'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('WEBKIT_DISABLE_COMPOSITING_MODE', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.11 2355 192.168.1.2 22'), ('XDG_DATA_DIRS', '/home/firefly/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('GST_VIDEO_FLIP_USE_RGA', '1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[2.111840] (-) TimerEvent: {}
+[2.212785] (-) TimerEvent: {}
+[2.312668] (camera_tis) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target camera_tis_node\x1b[0m\n'}
+[2.313806] (-) TimerEvent: {}
+[2.317386] (camera_tis) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target camera_tis\x1b[0m\n'}
+[2.414147] (-) TimerEvent: {}
+[2.483543] (camera_tis) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis_node.dir/rclcpp_components/node_main_camera_tis_node.cpp.o\x1b[0m\n'}
+[2.506686] (camera_tis) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o\x1b[0m\n'}
+[2.508309] (camera_tis) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis.dir/src/FileOut.cpp.o\x1b[0m\n'}
+[2.509073] (camera_tis) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/camera_tis.dir/src/E2camData.cpp.o\x1b[0m\n'}
+[2.514374] (-) TimerEvent: {}
+[2.615789] (-) TimerEvent: {}
+[2.717298] (-) TimerEvent: {}
+[2.819151] (-) TimerEvent: {}
+[2.921148] (-) TimerEvent: {}
+[3.022962] (-) TimerEvent: {}
+[3.063751] (camera_tis) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:1\x1b[m\x1b[K:\n'}
+[3.065780] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid E2proomData::read_para()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.066644] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/include/fileout/E2camData.h:13:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[3.067465] (camera_tis) StderrLine: {'line': b'   13 | #define E2POOM_CAMER_SYSPATH_MOTO   \x1b[01;35m\x1b[K"./SAVE/E2P_CAMER_DLG.bsd"\x1b[m\x1b[K\n'}
+[3.068225] (camera_tis) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.068937] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:66:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.069570] (camera_tis) StderrLine: {'line': b'   66 |     if(0 > fo.ReadFile(\x1b[01;36m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K,buff,E2POOM_CAMER_SAVEBUFF))\n'}
+[3.070155] (camera_tis) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.070696] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid E2proomData::write_camer_para()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.071175] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/include/fileout/E2camData.h:13:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[3.071627] (camera_tis) StderrLine: {'line': b'   13 | #define E2POOM_CAMER_SYSPATH_MOTO   \x1b[01;35m\x1b[K"./SAVE/E2P_CAMER_DLG.bsd"\x1b[m\x1b[K\n'}
+[3.072058] (camera_tis) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.072480] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/E2camData.cpp:125:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.072974] (camera_tis) StderrLine: {'line': b'  125 |     fo.WriteFile(\x1b[01;36m\x1b[KE2POOM_CAMER_SYSPATH_MOTO\x1b[m\x1b[K,buff,E2POOM_CAMER_SAVEBUFF);\n'}
+[3.073378] (camera_tis) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.123618] (-) TimerEvent: {}
+[3.225325] (-) TimerEvent: {}
+[3.326930] (-) TimerEvent: {}
+[3.428443] (-) TimerEvent: {}
+[3.530036] (-) TimerEvent: {}
+[3.631525] (-) TimerEvent: {}
+[3.733054] (-) TimerEvent: {}
+[3.834598] (-) TimerEvent: {}
+[3.935845] (-) TimerEvent: {}
+[4.037103] (-) TimerEvent: {}
+[4.138154] (-) TimerEvent: {}
+[4.239372] (-) TimerEvent: {}
+[4.340594] (-) TimerEvent: {}
+[4.441820] (-) TimerEvent: {}
+[4.543058] (-) TimerEvent: {}
+[4.644322] (-) TimerEvent: {}
+[4.745518] (-) TimerEvent: {}
+[4.846705] (-) TimerEvent: {}
+[4.947954] (-) TimerEvent: {}
+[5.049161] (-) TimerEvent: {}
+[5.150409] (-) TimerEvent: {}
+[5.251649] (-) TimerEvent: {}
+[5.352892] (-) TimerEvent: {}
+[5.454226] (-) TimerEvent: {}
+[5.555466] (-) TimerEvent: {}
+[5.656716] (-) TimerEvent: {}
+[5.758034] (-) TimerEvent: {}
+[5.859295] (-) TimerEvent: {}
+[5.960544] (-) TimerEvent: {}
+[6.061756] (-) TimerEvent: {}
+[6.162975] (-) TimerEvent: {}
+[6.264253] (-) TimerEvent: {}
+[6.365468] (-) TimerEvent: {}
+[6.466693] (-) TimerEvent: {}
+[6.567970] (-) TimerEvent: {}
+[6.669213] (-) TimerEvent: {}
+[6.770425] (-) TimerEvent: {}
+[6.871682] (-) TimerEvent: {}
+[6.972923] (-) TimerEvent: {}
+[7.074192] (-) TimerEvent: {}
+[7.175438] (-) TimerEvent: {}
+[7.276673] (-) TimerEvent: {}
+[7.377779] (-) TimerEvent: {}
+[7.478966] (-) TimerEvent: {}
+[7.580180] (-) TimerEvent: {}
+[7.681370] (-) TimerEvent: {}
+[7.782512] (-) TimerEvent: {}
+[7.883506] (-) TimerEvent: {}
+[7.931446] (camera_tis) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable camera_tis_node\x1b[0m\n'}
+[7.983906] (-) TimerEvent: {}
+[8.084924] (-) TimerEvent: {}
+[8.185920] (-) TimerEvent: {}
+[8.286819] (-) TimerEvent: {}
+[8.386775] (camera_tis) StdoutLine: {'line': b'[ 83%] Built target camera_tis_node\n'}
+[8.387244] (-) TimerEvent: {}
+[8.487914] (-) TimerEvent: {}
+[8.570682] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid camera_tis::CameraTis::_modbus(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.571608] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:232:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kport\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.572089] (camera_tis) StderrLine: {'line': b'  232 | void CameraTis::_modbus(\x1b[01;35m\x1b[Kint port\x1b[m\x1b[K)\n'}
+[8.572484] (camera_tis) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[8.588182] (-) TimerEvent: {}
+[8.589520] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint camera_tis::CameraTis::_set_power(bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.590441] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:371:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kp\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.590950] (camera_tis) StderrLine: {'line': b'  371 | int CameraTis::_set_power(\x1b[01;35m\x1b[Kbool p\x1b[m\x1b[K)\n'}
+[8.591360] (camera_tis) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~~^\x1b[m\x1b[K\n'}
+[8.591728] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint camera_tis::CameraTis::_set_exposure(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.592098] (camera_tis) StderrLine: {'line': b'\x1b[01m\x1b[K/home/firefly/test_mysunny/src/camera_tis/src/camera_tis.cpp:377:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ke\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.592464] (camera_tis) StderrLine: {'line': b'  377 | int CameraTis::_set_exposure(\x1b[01;35m\x1b[Kint e\x1b[m\x1b[K)\n'}
+[8.592823] (camera_tis) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K~~~~^\x1b[m\x1b[K\n'}
+[8.688446] (-) TimerEvent: {}
+[8.789620] (-) TimerEvent: {}
+[8.890824] (-) TimerEvent: {}
+[8.992025] (-) TimerEvent: {}
+[9.093228] (-) TimerEvent: {}
+[9.194494] (-) TimerEvent: {}
+[9.295684] (-) TimerEvent: {}
+[9.396875] (-) TimerEvent: {}
+[9.498068] (-) TimerEvent: {}
+[9.599251] (-) TimerEvent: {}
+[9.700446] (-) TimerEvent: {}
+[9.801634] (-) TimerEvent: {}
+[9.902829] (-) TimerEvent: {}
+[10.004057] (-) TimerEvent: {}
+[10.105255] (-) TimerEvent: {}
+[10.206471] (-) TimerEvent: {}
+[10.307696] (-) TimerEvent: {}
+[10.408868] (-) TimerEvent: {}
+[10.510056] (-) TimerEvent: {}
+[10.611257] (-) TimerEvent: {}
+[10.712455] (-) TimerEvent: {}
+[10.813631] (-) TimerEvent: {}
+[10.914814] (-) TimerEvent: {}
+[11.015999] (-) TimerEvent: {}
+[11.117216] (-) TimerEvent: {}
+[11.218410] (-) TimerEvent: {}
+[11.319785] (-) TimerEvent: {}
+[11.421028] (-) TimerEvent: {}
+[11.522221] (-) TimerEvent: {}
+[11.623434] (-) TimerEvent: {}
+[11.724634] (-) TimerEvent: {}
+[11.825794] (-) TimerEvent: {}
+[11.927007] (-) TimerEvent: {}
+[12.028286] (-) TimerEvent: {}
+[12.129533] (-) TimerEvent: {}
+[12.230765] (-) TimerEvent: {}
+[12.331940] (-) TimerEvent: {}
+[12.433088] (-) TimerEvent: {}
+[12.534295] (-) TimerEvent: {}
+[12.635459] (-) TimerEvent: {}
+[12.736647] (-) TimerEvent: {}
+[12.837832] (-) TimerEvent: {}
+[12.938994] (-) TimerEvent: {}
+[13.040189] (-) TimerEvent: {}
+[13.141351] (-) TimerEvent: {}
+[13.242474] (-) TimerEvent: {}
+[13.343633] (-) TimerEvent: {}
+[13.444641] (-) TimerEvent: {}
+[13.545815] (-) TimerEvent: {}
+[13.647081] (-) TimerEvent: {}
+[13.748314] (-) TimerEvent: {}
+[13.849560] (-) TimerEvent: {}
+[13.950929] (-) TimerEvent: {}
+[14.052290] (-) TimerEvent: {}
+[14.096296] (camera_tis) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcamera_tis.so\x1b[0m\n'}
+[14.152610] (-) TimerEvent: {}
+[14.253966] (-) TimerEvent: {}
+[14.355573] (-) TimerEvent: {}
+[14.457206] (-) TimerEvent: {}
+[14.559007] (-) TimerEvent: {}
+[14.660590] (-) TimerEvent: {}
+[14.762078] (-) TimerEvent: {}
+[14.841672] (camera_tis) StdoutLine: {'line': b'[100%] Built target camera_tis\n'}
+[14.862488] (-) TimerEvent: {}
+[14.869611] (camera_tis) CommandEnded: {'returncode': 0}
+[14.962788] (-) TimerEvent: {}
+[14.993824] (camera_tis) JobProgress: {'identifier': 'camera_tis', 'progress': 'install'}
+[15.055397] (camera_tis) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis'], 'cwd': '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('C_INCLUDE_PATH', '/usr/include/libdrm:'), ('GST_V4L2_PREFERRED_FOURCC', 'YU12'), ('USER', 'firefly'), ('SSH_CLIENT', '192.168.1.11 2355 22'), ('XDG_SESSION_TYPE', 'tty'), ('MOZ_DISABLE_RDD_SANDBOX', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/firefly'), ('OLDPWD', '/home/firefly/test_mysunny/src'), ('SSH_TTY', '/dev/pts/0'), ('GST_MPP_VIDEODEC_DEFAULT_ARM_AFBC', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('GST_VIDEO_CONVERT_USE_RGA', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('CPLUS_INCLUDE_PATH', '/usr/include/libdrm:'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'firefly'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('WEBKIT_DISABLE_COMPOSITING_MODE', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.11 2355 192.168.1.2 22'), ('XDG_DATA_DIRS', '/home/firefly/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('GST_VIDEO_FLIP_USE_RGA', '1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[15.065831] (-) TimerEvent: {}
+[15.113062] (camera_tis) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.115526] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/camera_tis/camera_tis_node\n'}
+[15.117518] (camera_tis) StdoutLine: {'line': b'-- Set runtime path of "/home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/camera_tis/camera_tis_node" to ""\n'}
+[15.118851] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/libcamera_tis.so\n'}
+[15.126065] (camera_tis) StdoutLine: {'line': b'-- Set runtime path of "/home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/libcamera_tis.so" to ""\n'}
+[15.128156] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include\n'}
+[15.130210] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/camera_tis\n'}
+[15.131790] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/camera_tis/camera_tis.hpp\n'}
+[15.133088] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout\n'}
+[15.134561] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout/tistdtypes.h\n'}
+[15.136274] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout/FileOut.h\n'}
+[15.137982] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout/E2camData.h\n'}
+[15.139106] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/launch\n'}
+[15.140145] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/launch/main.launch.py\n'}
+[15.140917] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/config\n'}
+[15.141707] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/config/params.yaml\n'}
+[15.142494] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/library_path.sh\n'}
+[15.144465] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/library_path.dsv\n'}
+[15.146969] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/package_run_dependencies/camera_tis\n'}
+[15.151103] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/parent_prefix_path/camera_tis\n'}
+[15.160725] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/ament_prefix_path.sh\n'}
+[15.166931] (-) TimerEvent: {}
+[15.169790] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/ament_prefix_path.dsv\n'}
+[15.171272] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/path.sh\n'}
+[15.172413] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/path.dsv\n'}
+[15.173996] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.bash\n'}
+[15.175119] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.sh\n'}
+[15.176609] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.zsh\n'}
+[15.178059] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.dsv\n'}
+[15.179721] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/package.dsv\n'}
+[15.185197] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/packages/camera_tis\n'}
+[15.186786] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/rclcpp_components/camera_tis\n'}
+[15.188408] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/export_camera_tisExport.cmake\n'}
+[15.189937] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/export_camera_tisExport-noconfig.cmake\n'}
+[15.191360] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.192517] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/camera_tisConfig.cmake\n'}
+[15.194116] (camera_tis) StdoutLine: {'line': b'-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/camera_tisConfig-version.cmake\n'}
+[15.195488] (camera_tis) StdoutLine: {'line': b'-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/package.xml\n'}
+[15.196726] (camera_tis) CommandEnded: {'returncode': 0}
+[15.272337] (-) TimerEvent: {}
+[15.373472] (-) TimerEvent: {}
+[15.475040] (-) TimerEvent: {}
+[15.576601] (-) TimerEvent: {}
+[15.649871] (camera_tis) JobEnded: {'identifier': 'camera_tis', 'rc': 0}
+[15.657386] (-) EventReactorShutdown: {}

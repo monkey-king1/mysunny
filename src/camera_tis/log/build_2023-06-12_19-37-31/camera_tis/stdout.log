@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target camera_tis[0m
+[ 33%] Built target camera_tis_node
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library libcamera_tis.so[0m

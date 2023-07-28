@@ -1,0 +1,2 @@
+Invoking command in '/home/yj/camera_tis/build/camera_tis': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/yj/camera_tis -DCMAKE_INSTALL_PREFIX=/home/yj/camera_tis/install/camera_tis
+Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/yj/camera_tis -DCMAKE_INSTALL_PREFIX=/home/yj/camera_tis/install/camera_tis

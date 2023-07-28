@@ -1,0 +1,76 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclcpp_components: 9.2.2 (/opt/ros/galactic/share/rclcpp_components/cmake)
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Checking for module 'libmodbus'
+--   Found libmodbus, version 3.1.6
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/firefly/test_mysunny/src/camera_tis/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/firefly/test_mysunny/src/camera_tis/build/camera_tis
+[35m[1mScanning dependencies of target camera_tis_node[0m
+[35m[1mScanning dependencies of target camera_tis[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/camera_tis_node.dir/rclcpp_components/node_main_camera_tis_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/FileOut.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/E2camData.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable camera_tis_node[0m
+[ 83%] Built target camera_tis_node
+[100%] [32m[1mLinking CXX shared library libcamera_tis.so[0m
+[100%] Built target camera_tis
+-- Install configuration: ""
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/camera_tis/camera_tis_node
+-- Set runtime path of "/home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/camera_tis/camera_tis_node" to ""
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/libcamera_tis.so
+-- Set runtime path of "/home/firefly/test_mysunny/src/camera_tis/install/camera_tis/lib/libcamera_tis.so" to ""
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/camera_tis
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/camera_tis/camera_tis.hpp
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout/tistdtypes.h
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout/FileOut.h
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/include/fileout/E2camData.h
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/launch
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/launch/main.launch.py
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/config
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/config/params.yaml
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/library_path.sh
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/library_path.dsv
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/package_run_dependencies/camera_tis
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/parent_prefix_path/camera_tis
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/ament_prefix_path.sh
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/ament_prefix_path.dsv
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/path.sh
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/environment/path.dsv
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.bash
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.sh
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.zsh
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/local_setup.dsv
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/package.dsv
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/packages/camera_tis
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/ament_index/resource_index/rclcpp_components/camera_tis
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/export_camera_tisExport.cmake
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/export_camera_tisExport-noconfig.cmake
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/camera_tisConfig.cmake
+-- Installing: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/cmake/camera_tisConfig-version.cmake
+-- Up-to-date: /home/firefly/test_mysunny/src/camera_tis/install/camera_tis/share/camera_tis/package.xml

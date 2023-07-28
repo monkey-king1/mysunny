@@ -1,0 +1,9 @@
+[0.037s] Invoking command in '/home/yj/camera_tis/build/camera_tis': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+[0.166s] [ 33%] Built target camera_tis_node
+[0.175s] [ 50%] [32m[1mLinking CXX shared library libcamera_tis.so[0m
+[0.476s] /usr/bin/ld: cannot find -lv4l2
+[0.477s] collect2: error: ld returned 1 exit status
+[0.479s] make[2]: *** [CMakeFiles/camera_tis.dir/build.make:234: libcamera_tis.so] Error 1
+[0.480s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2
+[0.481s] make: *** [Makefile:141: all] Error 2
+[0.485s] Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '2': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16

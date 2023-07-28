@@ -1,0 +1,54 @@
+[0.035s] Invoking command in '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/firefly/test_mysunny/src/camera_tis -DCMAKE_INSTALL_PREFIX=/home/firefly/test_mysunny/src/camera_tis/install/camera_tis
+[0.302s] -- The C compiler identification is GNU 9.4.0
+[0.593s] -- The CXX compiler identification is GNU 9.4.0
+[0.613s] -- Check for working C compiler: /usr/bin/cc
+[1.034s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.039s] -- Detecting C compiler ABI info
+[1.467s] -- Detecting C compiler ABI info - done
+[1.560s] -- Detecting C compile features
+[1.562s] -- Detecting C compile features - done
+[1.580s] -- Check for working CXX compiler: /usr/bin/c++
+[2.079s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.082s] -- Detecting CXX compiler ABI info
+[2.564s] -- Detecting CXX compiler ABI info - done
+[2.660s] -- Detecting CXX compile features
+[2.664s] -- Detecting CXX compile features - done
+[2.674s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.775s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.776s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.044s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[3.166s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.176s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.517s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.663s] -- Found FastRTPS: /opt/ros/galactic/include  
+[3.823s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.902s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[3.905s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[3.932s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.933s] -- Looking for pthread.h
+[4.256s] -- Looking for pthread.h - found
+[4.258s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.771s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.773s] -- Looking for pthread_create in pthreads
+[5.128s] -- Looking for pthread_create in pthreads - not found
+[5.129s] -- Looking for pthread_create in pthread
+[5.546s] -- Looking for pthread_create in pthread - found
+[5.558s] -- Found Threads: TRUE  
+[5.935s] -- Found rclcpp_components: 9.2.2 (/opt/ros/galactic/share/rclcpp_components/cmake)
+[6.013s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[6.193s] -- Found OpenCV: /usr (found version "4.2.0") 
+[6.202s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[6.204s] -- Checking for modules 'gstreamer-1.0;gstreamer-video-1.0;libmodbus'
+[6.216s] --   No package 'gstreamer-1.0' found
+[6.228s] --   No package 'gstreamer-video-1.0' found
+[6.240s] CMake Error at /usr/share/cmake-3.16/Modules/FindPkgConfig.cmake:463 (message):
+[6.241s]   A required package was not found
+[6.241s] Call Stack (most recent call first):
+[6.242s]   /usr/share/cmake-3.16/Modules/FindPkgConfig.cmake:643 (_pkg_check_modules_internal)
+[6.242s]   CMakeLists.txt:26 (pkg_check_modules)
+[6.242s] 
+[6.243s] 
+[6.263s] -- Configuring incomplete, errors occurred!
+[6.263s] See also "/home/firefly/test_mysunny/src/camera_tis/build/camera_tis/CMakeFiles/CMakeOutput.log".
+[6.263s] See also "/home/firefly/test_mysunny/src/camera_tis/build/camera_tis/CMakeFiles/CMakeError.log".
+[6.297s] Invoked command in '/home/firefly/test_mysunny/src/camera_tis/build/camera_tis' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/firefly/test_mysunny/src/camera_tis -DCMAKE_INSTALL_PREFIX=/home/firefly/test_mysunny/src/camera_tis/install/camera_tis

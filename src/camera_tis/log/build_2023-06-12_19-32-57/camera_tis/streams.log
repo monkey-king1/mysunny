@@ -1,0 +1,38 @@
+[0.034s] Invoking command in '/home/yj/camera_tis/build/camera_tis': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+[0.131s] [35m[1mScanning dependencies of target camera_tis[0m
+[0.160s] [ 33%] Built target camera_tis_node
+[0.208s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o[0m
+[5.881s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_modbus(int)[m[K’:
+[5.881s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:232:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kport[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.881s]   232 | void CameraTis::_modbus([01;35m[Kint port[m[K)
+[5.882s]       |                         [01;35m[K~~~~^~~~[m[K
+[5.915s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_power_on()[m[K’:
+[5.916s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:42:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_PLAYING[m[K’ was not declared in this scope
+[5.916s]   352 |     if (gst_element_set_state(_pipeline, [01;31m[KGST_STATE_PLAYING[m[K) == GST_STATE_CHANGE_FAILURE) {
+[5.916s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.929s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgst_element_set_state[m[K’ was not declared in this scope
+[5.929s]   352 |     if ([01;31m[Kgst_element_set_state[m[K(_pipeline, GST_STATE_PLAYING) == GST_STATE_CHANGE_FAILURE) {
+[5.929s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.945s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:352:64:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_CHANGE_FAILURE[m[K’ was not declared in this scope
+[5.945s]   352 |  if (gst_element_set_state(_pipeline, GST_STATE_PLAYING) == [01;31m[KGST_STATE_CHANGE_FAILURE[m[K) {
+[5.945s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.945s] 
+[5.956s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_power_off()[m[K’:
+[5.956s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:42:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_PAUSED[m[K’ was not declared in this scope
+[5.956s]   363 |     if (gst_element_set_state(_pipeline, [01;31m[KGST_STATE_PAUSED[m[K) == GST_STATE_CHANGE_FAILURE) {
+[5.956s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.969s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgst_element_set_state[m[K’ was not declared in this scope
+[5.969s]   363 |     if ([01;31m[Kgst_element_set_state[m[K(_pipeline, GST_STATE_PAUSED) == GST_STATE_CHANGE_FAILURE) {
+[5.969s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.986s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:363:63:[m[K [01;31m[Kerror: [m[K‘[01m[KGST_STATE_CHANGE_FAILURE[m[K’ was not declared in this scope
+[5.986s]   363 |   if (gst_element_set_state(_pipeline, GST_STATE_PAUSED) == [01;31m[KGST_STATE_CHANGE_FAILURE[m[K) {
+[5.986s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.986s] 
+[5.996s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_set_exposure(int)[m[K’:
+[5.996s] [01m[K/home/yj/camera_tis/src/camera_tis.cpp:378:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_property[m[K’ was not declared in this scope
+[5.996s]   378 |   return [01;31m[Kset_property[m[K(_pipeline, "Exposure Time (us)", e) ? 0 : 1;
+[5.996s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[9.046s] make[2]: *** [CMakeFiles/camera_tis.dir/build.make:63: CMakeFiles/camera_tis.dir/src/camera_tis.cpp.o] Error 1
+[9.047s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2
+[9.047s] make: *** [Makefile:141: all] Error 2
+[9.055s] Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '2': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16

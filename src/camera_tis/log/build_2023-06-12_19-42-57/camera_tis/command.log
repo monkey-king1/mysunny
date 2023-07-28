@@ -1,0 +1,4 @@
+Invoking command in '/home/yj/camera_tis/build/camera_tis': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '0': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+Invoking command in '/home/yj/camera_tis/build/camera_tis': /usr/bin/cmake --install /home/yj/camera_tis/build/camera_tis
+Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '0': /usr/bin/cmake --install /home/yj/camera_tis/build/camera_tis

@@ -1,0 +1,17 @@
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kvoid camera_tis::CameraTis::_modbus(int)[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:232:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kport[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  232 | void CameraTis::_modbus([01;35m[Kint port[m[K)
+      |                         [01;35m[K~~~~^~~~[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_set_power(bool)[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:371:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  371 | int CameraTis::_set_power([01;35m[Kbool p[m[K)
+      |                           [01;35m[K~~~~~^[m[K
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:[m[K In member function ‘[01m[Kint camera_tis::CameraTis::_set_exposure(int)[m[K’:
+[01m[K/home/yj/camera_tis/src/camera_tis.cpp:377:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ke[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  377 | int CameraTis::_set_exposure([01;35m[Kint e[m[K)
+      |                              [01;35m[K~~~~^[m[K
+/usr/bin/ld: cannot find -lv4l2
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/camera_tis.dir/build.make:234: libcamera_tis.so] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/camera_tis.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

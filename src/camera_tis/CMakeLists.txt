@@ -20,8 +20,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(OpenCV REQUIRED)
+
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(TIS REQUIRED IMPORTED_TARGET gstreamer-1.0 gstreamer-video-1.0 gobject-introspection-1.0 tcam libmodbus)
+#pkg_check_modules(TIS REQUIRED IMPORTED_TARGET gstreamer-1.0 gstreamer-video-1.0 libmodbus)
+pkg_check_modules(TIS REQUIRED IMPORTED_TARGET  libmodbus)
 
 add_library(camera_tis SHARED src/camera_tis.cpp src/E2camData.cpp src/FileOut.cpp)
 
@@ -37,7 +40,7 @@ target_include_directories(camera_tis
     $<INSTALL_INTERFACE:include>
 )
 
-target_link_libraries(camera_tis PkgConfig::TIS)
+target_link_libraries(camera_tis PkgConfig::TIS v4l2 ${OpenCV_LIBS})
 
 rclcpp_components_register_node(camera_tis
   PLUGIN "camera_tis::CameraTis"

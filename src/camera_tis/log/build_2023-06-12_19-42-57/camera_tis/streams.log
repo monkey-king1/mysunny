@@ -1,0 +1,44 @@
+[0.035s] Invoking command in '/home/yj/camera_tis/build/camera_tis': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+[0.161s] [ 33%] Built target camera_tis_node
+[0.174s] [ 50%] [32m[1mLinking CXX shared library libcamera_tis.so[0m
+[0.669s] [100%] Built target camera_tis
+[0.692s] Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '0': /usr/bin/cmake --build /home/yj/camera_tis/build/camera_tis -- -j16 -l16
+[0.805s] Invoking command in '/home/yj/camera_tis/build/camera_tis': /usr/bin/cmake --install /home/yj/camera_tis/build/camera_tis
+[0.822s] -- Install configuration: ""
+[0.822s] -- Installing: /home/yj/camera_tis/install/camera_tis/lib/camera_tis/camera_tis_node
+[0.823s] -- Set runtime path of "/home/yj/camera_tis/install/camera_tis/lib/camera_tis/camera_tis_node" to ""
+[0.824s] -- Installing: /home/yj/camera_tis/install/camera_tis/lib/libcamera_tis.so
+[0.827s] -- Set runtime path of "/home/yj/camera_tis/install/camera_tis/lib/libcamera_tis.so" to ""
+[0.828s] -- Installing: /home/yj/camera_tis/install/camera_tis/include
+[0.828s] -- Installing: /home/yj/camera_tis/install/camera_tis/include/fileout
+[0.828s] -- Installing: /home/yj/camera_tis/install/camera_tis/include/fileout/E2camData.h
+[0.828s] -- Installing: /home/yj/camera_tis/install/camera_tis/include/fileout/tistdtypes.h
+[0.828s] -- Installing: /home/yj/camera_tis/install/camera_tis/include/fileout/FileOut.h
+[0.828s] -- Installing: /home/yj/camera_tis/install/camera_tis/include/camera_tis
+[0.828s] -- Installing: /home/yj/camera_tis/install/camera_tis/include/camera_tis/camera_tis.hpp
+[0.829s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/launch
+[0.829s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/launch/main.launch.py
+[0.829s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/config
+[0.829s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/config/params.yaml
+[0.830s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/environment/library_path.sh
+[0.830s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/environment/library_path.dsv
+[0.831s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/ament_index/resource_index/package_run_dependencies/camera_tis
+[0.831s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/ament_index/resource_index/parent_prefix_path/camera_tis
+[0.832s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/environment/ament_prefix_path.sh
+[0.832s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/environment/ament_prefix_path.dsv
+[0.832s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/environment/path.sh
+[0.832s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/environment/path.dsv
+[0.832s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/local_setup.bash
+[0.833s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/local_setup.sh
+[0.833s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/local_setup.zsh
+[0.833s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/local_setup.dsv
+[0.833s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/package.dsv
+[0.834s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/ament_index/resource_index/packages/camera_tis
+[0.834s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/ament_index/resource_index/rclcpp_components/camera_tis
+[0.835s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/cmake/export_camera_tisExport.cmake
+[0.835s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/cmake/export_camera_tisExport-noconfig.cmake
+[0.836s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/cmake/ament_cmake_export_targets-extras.cmake
+[0.836s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/cmake/camera_tisConfig.cmake
+[0.836s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/cmake/camera_tisConfig-version.cmake
+[0.837s] -- Installing: /home/yj/camera_tis/install/camera_tis/share/camera_tis/package.xml
+[0.844s] Invoked command in '/home/yj/camera_tis/build/camera_tis' returned '0': /usr/bin/cmake --install /home/yj/camera_tis/build/camera_tis
