@@ -33,8 +33,8 @@ jobs:
           target: runtime
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: qubo188612/sunny-tis:runtime
-          cache-from: type=registry,ref=qubo188612/sunny-tis:runtime
+          tags: yingjiea/sunny-tis:runtime
+          cache-from: type=registry,ref=yingjiea/sunny-tis:runtime
           cache-to: type=inline
   dev:
     name: Development
@@ -60,8 +60,8 @@ jobs:
           target: dev
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: qubo188612/sunny-tis:dev
-          cache-from: type=registry,ref=qubo188612/sunny-tis:dev
+          tags: yingjiea/sunny-tis:dev
+          cache-from: type=registry,ref=yingjiea/sunny-tis:dev
           cache-to: type=inline
   deploy:
     name: Deployment
@@ -87,8 +87,8 @@ jobs:
           target: deploy
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: qubo188612/sunny-tis:deploy3072
-          cache-from: type=registry,ref=qubo188612/sunny-tis:deploy3072
+          tags: yingjiea/sunny-tis:deploy
+          cache-from: type=registry,ref=yingjiea/sunny-tis:deploycsi
           cache-to: type=inline
   desktop:
     name: Desktop
@@ -113,6 +113,6 @@ jobs:
           target: desktop
           platforms: linux/amd64
           push: true
-          tags: qubo188612/sunny-tis:desktop
-          cache-from: type=registry,ref=qubo188612/sunny-tis:desktop
+          tags: yingjiea/sunny-tis:desktop
+          cache-from: type=registry,ref=yingjiea/sunny-tis:desktop
           cache-to: type=inline
